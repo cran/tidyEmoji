@@ -14,7 +14,7 @@ library(ggplot2)
 library(dplyr)
 
 ## -----------------------------------------------------------------------------
-ata_tweets <- readr::read_csv("ata_tweets.csv")
+ata_tweets <- readr::read_csv("ata_tweets.rda")
 
 ## -----------------------------------------------------------------------------
 ata_tweets %>%
