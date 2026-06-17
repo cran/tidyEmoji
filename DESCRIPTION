@@ -1,31 +1,37 @@
 Package: tidyEmoji
 Type: Package
-Title: Discovers Emoji from Text
-Version: 0.1.1
+Title: Discover, Count and Score Emoji in Text
+Version: 0.2.0
 Authors@R: 
     c(person(given = "Youzhi",
              family = "Yu",
              role = c("aut", "cre"),
              email = "yuyouzhi666@icloud.com"))
-Description: Unicodes are not friendly to work with, and not all Unicodes are
-    Emoji per se, making obtaining Emoji statistics a difficult task. This
-    tool can help your experience of working with Emoji as smooth as possible,
-    as it has the 'tidyverse' style. 
+Description: A tidy toolkit for working with the emoji in any text column, such
+    as social-media posts, product reviews, chat logs or survey responses.
+    Unicode is awkward to handle and not every code point is an emoji, which
+    makes emoji statistics fiddly to obtain. 'tidyEmoji' extracts, counts,
+    categorises and sentiment-scores emoji with grapheme-aware detection (so
+    skin-tone and multi-person sequences stay intact), returning tidy data
+    frames that slot straight into a 'tidyverse' workflow. The bundled emoji
+    sentiment lexicon is from the Emoji Sentiment Ranking of Kralj Novak et al.
+    (2015) <doi:10.1371/journal.pone.0144296>, released under CC BY-SA 4.0.
 License: GPL (>= 3)
 URL: https://pursuitofdatascience.github.io/tidyEmoji/
 BugReports: https://github.com/PursuitOfDataScience/tidyEmoji/issues
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.2
+RoxygenNote: 7.3.2
 Depends: R (>= 3.5.0)
-Imports: dplyr, emoji, purrr, stringr, tibble, tidyr, utils
+Imports: dplyr (>= 1.1.0), emoji, lifecycle, stats, tibble, tidyr,
+        utils
 Suggests: rmarkdown, knitr, testthat (>= 3.0.0), ggplot2, readr,
-        forcats
+        forcats, stringr
 Config/testthat/edition: 3
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2023-08-19 19:57:07 UTC; youzhi
+Packaged: 2026-06-16 21:03:52 UTC; youzhi
 Author: Youzhi Yu [aut, cre]
 Maintainer: Youzhi Yu <yuyouzhi666@icloud.com>
 Repository: CRAN
-Date/Publication: 2023-08-19 20:10:02 UTC
+Date/Publication: 2026-06-17 07:20:02 UTC
